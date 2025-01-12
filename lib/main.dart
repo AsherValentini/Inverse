@@ -6,8 +6,6 @@ import 'functions.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'dart:ui';
-
 import 'levelOne.dart';
 import 'levelTwo.dart';
 import 'levelThree.dart';
@@ -143,18 +141,18 @@ class _FirstRouteState extends State<FirstRoute>
 //Button to Guide
                       ElevatedButton(
                         style: ButtonStyle(
-                          side: MaterialStateProperty.all(
+                          side: WidgetStateProperty.all(
                             BorderSide(width: 1.0, color: Colors.white),
                             //Color.fromARGB(255, 192, 192, 192)
                           ),
-                          backgroundColor: MaterialStateProperty.all<Color>(
+                          backgroundColor: WidgetStateProperty.all<Color>(
                               Color.fromARGB(255, 38, 50,
                                   65)), //button background//color uppper darcula  43, 39, 39// blue grey: 38 50 56
-                          textStyle: MaterialStateProperty.all(
+                          textStyle: WidgetStateProperty.all(
                             TextStyle(fontSize: 30),
                             //font size
                           ),
-                          padding: MaterialStateProperty.all(
+                          padding: WidgetStateProperty.all(
                             //baground widget size
                             EdgeInsets.all(15),
                           ),
@@ -181,17 +179,17 @@ class _FirstRouteState extends State<FirstRoute>
 //Buton To Levels
                       ElevatedButton(
                         style: ButtonStyle(
-                          side: MaterialStateProperty.all(
+                          side: WidgetStateProperty.all(
                             BorderSide(width: 1.0, color: Colors.white),
                           ),
-                          backgroundColor: MaterialStateProperty.all<Color>(
+                          backgroundColor: WidgetStateProperty.all<Color>(
                               Color.fromARGB(255, 38, 50,
                                   65)), //button background//color uppper darcula  43, 39, 39// blue grey: 38 50 56
-                          textStyle: MaterialStateProperty.all(
+                          textStyle: WidgetStateProperty.all(
                             TextStyle(fontSize: 30),
                             //font size
                           ),
-                          padding: MaterialStateProperty.all(
+                          padding: WidgetStateProperty.all(
                             //baground widget size
                             EdgeInsets.all(5),
                           ),

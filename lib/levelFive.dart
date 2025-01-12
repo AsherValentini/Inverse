@@ -11,8 +11,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:lottie/lottie.dart';
 
-import 'dart:ui';
-
 //Route4 Level 1: The City Movie
 class LevelFive extends StatefulWidget {
   const LevelFive({Key? key}) : super(key: key);

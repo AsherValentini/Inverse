@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import 'dart:ui';
 
 //import 'globals.dart';
 
@@ -15,22 +14,22 @@ Widget levelButton(
     BuildContext context, String text, Widget routeName, bool levelOneFailed) {
   return ElevatedButton(
     style: ButtonStyle(
-      side: MaterialStateProperty.all(
+      side: WidgetStateProperty.all(
         BorderSide(width: 1.0, color: Color.fromARGB(255, 192, 192, 192)),
       ),
       backgroundColor: levelOneFailed
-          ? MaterialStateProperty.all<Color>(Colors.blueGrey.shade900)
-          : MaterialStateProperty.all<Color>(Color(0xFF30dbf4)),
+          ? WidgetStateProperty.all<Color>(Colors.blueGrey.shade900)
+          : WidgetStateProperty.all<Color>(Color(0xFF30dbf4)),
       //backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(
       // 255,
       // 67,
       // 65,
       //65)), //button background//color uppper darcula  43, 39, 39// blue grey: 38 50 56
-      textStyle: MaterialStateProperty.all(
+      textStyle: WidgetStateProperty.all(
         TextStyle(fontSize: 20),
         //font size
       ),
-      padding: MaterialStateProperty.all(
+      padding: WidgetStateProperty.all(
         //baground widget size
         EdgeInsets.all(5),
       ),
@@ -56,16 +55,16 @@ Widget levelButton(
 Widget lockedButton(BuildContext context, Widget routeName) {
   return ElevatedButton(
     style: ButtonStyle(
-      side: MaterialStateProperty.all(
+      side: WidgetStateProperty.all(
         BorderSide(width: 1.0, color: Color.fromARGB(255, 192, 192, 192)),
       ),
       backgroundColor:
-          MaterialStateProperty.all<Color>(Colors.blueGrey.shade900),
-      textStyle: MaterialStateProperty.all(
+          WidgetStateProperty.all<Color>(Colors.blueGrey.shade900),
+      textStyle: WidgetStateProperty.all(
         TextStyle(fontSize: 20),
         //font size
       ),
-      padding: MaterialStateProperty.all(
+      padding: WidgetStateProperty.all(
         //baground widget size
         EdgeInsets.all(5),
       ),
@@ -85,22 +84,22 @@ Widget lockedButton(BuildContext context, Widget routeName) {
 Widget homeButton(BuildContext context, String text, Widget routeName) {
   return ElevatedButton(
     style: ButtonStyle(
-      side: MaterialStateProperty.all(
+      side: WidgetStateProperty.all(
         BorderSide(width: 1.0, color: Color.fromARGB(255, 192, 192, 192)),
       ),
       backgroundColor:
-          MaterialStateProperty.all<Color>(Colors.blueGrey.shade900),
+          WidgetStateProperty.all<Color>(Colors.blueGrey.shade900),
 
       //backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(
       // 255,
       // 67,
       // 65,
       //65)), //button background//color uppper darcula  43, 39, 39// blue grey: 38 50 56
-      textStyle: MaterialStateProperty.all(
+      textStyle: WidgetStateProperty.all(
         TextStyle(fontSize: 20),
         //font size
       ),
-      padding: MaterialStateProperty.all(
+      padding: WidgetStateProperty.all(
         //baground widget size
         EdgeInsets.all(5),
       ),
@@ -127,22 +126,22 @@ Widget homeButton(BuildContext context, String text, Widget routeName) {
 Widget backButton(BuildContext context, String text, Widget routeName) {
   return ElevatedButton(
     style: ButtonStyle(
-      side: MaterialStateProperty.all(
+      side: WidgetStateProperty.all(
         BorderSide(width: 1.0, color: Color.fromARGB(255, 192, 192, 192)),
       ),
       backgroundColor:
-          MaterialStateProperty.all<Color>(Colors.blueGrey.shade900),
+          WidgetStateProperty.all<Color>(Colors.blueGrey.shade900),
 
       //backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(
       // 255,
       // 67,
       // 65,
       //65)), //button background//color uppper darcula  43, 39, 39// blue grey: 38 50 56
-      textStyle: MaterialStateProperty.all(
+      textStyle: WidgetStateProperty.all(
         TextStyle(fontSize: 20),
         //font size
       ),
-      padding: MaterialStateProperty.all(
+      padding: WidgetStateProperty.all(
         //baground widget size
         EdgeInsets.all(5),
       ),
